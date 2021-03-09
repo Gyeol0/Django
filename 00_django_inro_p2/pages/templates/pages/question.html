@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>마법의 소라고동</h1>
+  <form action="{% url 'pages:answer' %}">
+    <div class="mb-3">
+      <label for="ex1" class="form-label">마법의 소라고동님...</label>
+      <textarea name="ques" class="form-control" id="ex1" rows="3"></textarea>
+    </div>
+    <input type="submit" class="btn btn-primary">
+  </form>
+{% endblock  %}

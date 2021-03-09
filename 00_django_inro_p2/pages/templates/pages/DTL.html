@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+  {% for food in foods %}
+    <li>{{ forloop.counter }}{{ food }}{{ forloop.counter0 }}</li>
+
+    {% empty %}
+      <li>지금 음식이 떨어졌습니다.</li>
+  {% endfor %}
+  <h4>IF</h4>
+  {% if '라면' in foods %}
+    <h4>라면이 있습니다.</h4>
+  {% endif %}
+{% comment %} 웬만하면 여기서는 참/거짓 정도만 데이터 처리는 파이썬 함수에서{% endcomment %}
+
+  {% for food in foods %}
+    {% if forloop.first %}
+      <p class="text-danger">첫 번째 음식은 {{ food }}입니다.</p>
+    {% else %}
+      <p class="text-primary">다음 음식은 {{ food }}입니다.</p>
+    {% endif %}
+  {% endfor %}
+
+  {% for number in numbers %}
+    <p>{{ number }}더하기 5 = {{ number|add:5}}</p>
+  {% endfor %}
+{% endblock  %}
