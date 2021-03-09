@@ -54,7 +54,21 @@ MANIFEST
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
+# Created by https://www.toptal.com/developers/gitignore/api/text
+# Edit at https://www.toptal.com/developers/gitignore?templates=text
 
+### Text ###
+*.doc
+*.docx
+*.log
+*.msg
+*.pages
+*.rtf
+*.txt
+*.wpd
+*.wps
+
+# End of https://www.toptal.com/developers/gitignore/api/text
 # Unit test / coverage reports
 htmlcov/
 .tox/
