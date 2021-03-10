@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>test</h1>
+  {% for article in articles %}
+    <div>
+      {% comment %} pk값을 같이 detail에 넘겨줌 {% endcomment %}
+      <a href="{% url 'articles:detail' article.pk %}" class="btn btn-warning fs-5 mb-3"> {{ article.pk }}번 게시물</a>  
+    </div>
+  {% endfor %}
+
+{% endblock  %}

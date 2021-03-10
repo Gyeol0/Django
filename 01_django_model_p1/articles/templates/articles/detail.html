@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% comment %} 해당 게시물 정보 나타내기 {% endcomment %}
+{% block content %}
+  <p>글 번호 : {{ article.pk }}</p>
+  <p>글 제목 : {{ article.title }}</p>
+  <p>글 내용 : {{ article.content }}</p>
+{% endblock  %}
