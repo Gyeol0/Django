@@ -42,6 +42,7 @@ def delete(request, pk):
     article.delete()
 
     return redirect('articles:index')
+    
 def edit(request, pk):
     article = Article.objects.get(pk=pk)
     context = {
