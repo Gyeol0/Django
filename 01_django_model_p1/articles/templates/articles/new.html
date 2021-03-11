@@ -1,17 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h1>new</h1>
+  <h1>NEW</h1>
   {% comment %} 새로운 게시물 만들기 폼 {% endcomment %}
   <form action="{% url 'articles:create' %}">
-    <label for="">title</label>
+    <label for="">TITLE</label>
     <input type="text" name='title'>
     <br>
-    <label for="">content</label>
+    <label for="">CONTENT</label>
     <textarea name="content" id="" cols="30" rows="10"></textarea>
     <br>
-    <input type="submit">
-  
+    <input type="submit" value="작성">
   </form>
+    <a href="">back</a>
 
 {% endblock  %}
