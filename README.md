@@ -62,3 +62,11 @@
 
 * CRUD
 * 테이블 생성
+* GET 방식
+
+### 02_django_crud_p1
+
+* CRUD 구현
+* redirect
+* POST 방식
+* csrf_token
