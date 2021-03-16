@@ -41,6 +41,8 @@
   * 자동 및 수동으로 로또 번호 생성
   * 외부 API requests하여 원하는 회차의 번호와 비교
 
+
+
 ## project01
 
 ### 01_django_model
@@ -56,6 +58,8 @@
 * 직접 수정
 * CRUD
 
+
+
 ## project02
 
 ### 02_django_crud
@@ -70,3 +74,13 @@
 * redirect
 * POST 방식
 * csrf_token
+
+
+
+## project03
+
+### 03_django_form
+
+* POST 방식
+* ModelForm
+* Restful
