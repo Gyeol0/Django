@@ -84,3 +84,12 @@
 * POST 방식
 * ModelForm
 * Restful
+
+### 04_django_pinterest
+
+* POST
+* ModelForm
+* static
+* STATIC_URL & STATICFILES_DIRS
+* image & file Form
+* MEDIA_URL & MEDIA_ROOT
