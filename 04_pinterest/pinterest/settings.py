@@ -37,6 +37,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'posts',
+    'accounts',
     'bootstrap5',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -125,7 +126,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'pinterest' / 'static']
+STATICFILES_DIRS = [
+    BASE_DIR / 'pinterest' / 'static',
+    ]
 
 # 사진을 저장할 위치
 # media라는 폴더가 생기고 거기에 저장, detail페이지에서 저장된 사진을 사용

@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('posts/', include('posts.urls')),
+    path('accounts/', include('accounts.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 # MEDIA_ROOT = BASE_DIR / 'media'
 # MEDIA_URL = '/media/'     settings.py에 이렇게 저장해놨음

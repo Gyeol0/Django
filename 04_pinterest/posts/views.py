@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.views.decorators.http import require_http_methods, require_POST, require_safe
 from .forms import PostForm
 from .models import Post
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 def index(request):
@@ -18,6 +19,7 @@ def index(request):
 # 이렇게 두 줄 적어도 됨
 # @require_POST
 # @require_safe
+@login_required
 def create(request):
     if request.method == 'POST':
         form = PostForm(request.POST, request.FILES)
