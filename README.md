@@ -100,7 +100,7 @@
 * Authentication
 * Authorization
 * 회원 정보
-* built-in Model
+* User Model
 
 
 
@@ -108,8 +108,6 @@
 
 ### 05_auth
 
-* Authentication
-* Authorization
 * Login
 * Logout
 * Signup
@@ -117,5 +115,15 @@
 * cookie
 * session
 * 접근 제한
-* built-in Model
 * User Model
+
+### 05_auth_p1
+
+* Login
+* Logout
+* Signup
+* 탈퇴
+* User Model
+* update_session_auth_hash
+* PasswordChangeForm
+
